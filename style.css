@@ -28,4 +28,54 @@ header p {
 
 /* 主要內容排版 */
 main {
-  max-width: 960p
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* 影片區塊並排 */
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.video-gallery iframe {
+  flex: 1 1 320px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* 按鈕區塊 */
+.watch-link {
+  text-align: center;
+}
+
+.watch-button {
+  display: inline-block;
+  background-color: #e53935;
+  color: white;
+  padding: 14px 28px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+}
+
+.watch-button:hover {
+  background-color: #c62828;
+}
+
+/* 頁尾 */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+  font-size: 0.9em;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
