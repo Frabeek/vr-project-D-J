@@ -1,81 +1,98 @@
-/* 基礎排版 */
+/* 全站基礎樣式 */
 body {
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fefefe;
-  color: #333;
+  background-color: #fff;
+  color: #222;
   line-height: 1.6;
 }
 
-/* 頁首設計 */
 header {
-  background-color: #1a1a1a;
+  background-color: #111;
   color: #fff;
-  padding: 40px 20px;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.2em;
+  font-size: 2rem;
 }
 
 header p {
-  font-size: 1.2em;
-  margin-top: 8px;
+  margin-top: 0.5rem;
+  font-size: 1rem;
 }
 
-/* 主要內容排版 */
 main {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 30px 20px;
+  padding: 2rem;
 }
 
-/* 影片區塊並排 */
+/* 並排影片 */
 .video-gallery {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
-  margin-bottom: 40px;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
-.video-gallery iframe {
-  flex: 1 1 320px;
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+iframe {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* 按鈕區塊 */
+/* 按鈕樣式 */
 .watch-link {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .watch-button {
   display: inline-block;
-  background-color: #e53935;
+  background-color: #ff4e00;
   color: white;
-  padding: 14px 28px;
-  font-size: 18px;
-  text-decoration: none;
+  padding: 0.75rem 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-decoration: none;
+  font-weight: bold;
   transition: background-color 0.3s;
 }
 
 .watch-button:hover {
-  background-color: #c62828;
+  background-color: #e03e00;
 }
 
-/* 頁尾 */
+/* About 區塊：圖片 + 文字並排 */
+.intro-section {
+  margin-bottom: 3rem;
+}
+
+.intro-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.intro-image {
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+  max-width: 500px;
+}
+
+/* 頁腳樣式 */
 footer {
+  background-color: #f1f1f1;
+  color: #444;
   text-align: center;
-  padding: 20px;
-  color: #777;
-  font-size: 0.9em;
-  border-top: 1px solid #ddd;
-  margin-top: 40px;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
