@@ -1,28 +1,31 @@
-/* 全站基礎樣式 */
+/* 基本設定 */
 body {
   font-family: 'Noto Sans TC', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fff;
-  color: #222;
+  background-color: #000;
+  color: #fff;
   line-height: 1.6;
+  cursor: none; /* 隱藏預設滑鼠游標 */
 }
 
 header {
-  background-color: #111;
-  color: #fff;
+  background-color: #000;
   padding: 2rem 1rem;
   text-align: center;
+  border-bottom: 1px solid #333;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.2rem;
+  color: #fff;
 }
 
 header p {
   margin-top: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  color: #aaa;
 }
 
 main {
@@ -35,15 +38,44 @@ main {
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 iframe {
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+  border: none;
 }
 
-/* 按鈕樣式 */
+/* About 區塊：圖片 + 文字 */
+.intro-section {
+  margin-bottom: 3rem;
+}
+
+.intro-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.intro-image {
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+.intro-text {
+  max-width: 500px;
+}
+
+.intro-text h2 {
+  color: #ff4e00;
+}
+
+/* 按鈕 */
 .watch-link {
   text-align: center;
   margin-bottom: 2rem;
@@ -64,35 +96,27 @@ iframe {
   background-color: #e03e00;
 }
 
-/* About 區塊：圖片 + 文字並排 */
-.intro-section {
-  margin-bottom: 3rem;
-}
-
-.intro-container {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.intro-image {
-  max-width: 400px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.intro-text {
-  max-width: 500px;
-}
-
-/* 頁腳樣式 */
+/* 頁腳 */
 footer {
-  background-color: #f1f1f1;
-  color: #444;
+  background-color: #000;
+  color: #555;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+  border-top: 1px solid #333;
+}
+
+/* 滑鼠跟隨圓點 */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #ff4e00;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease;
+  z-index: 9999;
 }
