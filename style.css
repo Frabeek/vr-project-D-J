@@ -1,69 +1,31 @@
+/* 基礎排版 */
 body {
   font-family: "Noto Sans TC", sans-serif;
-  background: linear-gradient(to bottom, #ffffff, #f0f4ff);
   margin: 0;
+  padding: 0;
+  background-color: #fefefe;
   color: #333;
   line-height: 1.6;
 }
 
+/* 頁首設計 */
 header {
-  background-color: #6a329f;
-  color: white;
-  padding: 2em;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 40px 20px;
   text-align: center;
 }
 
-h1, h2 {
-  margin-bottom: 0.5em;
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
 }
 
+header p {
+  font-size: 1.2em;
+  margin-top: 8px;
+}
+
+/* 主要內容排版 */
 main {
-  padding: 2em;
-  max-width: 800px;
-  margin: auto;
-}
-
-.preview img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.description, .links {
-  margin-top: 2em;
-}
-
-.links ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.watch-link {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.watch-button {
-  display: inline-block;
-  background-color: #ff4f4f;
-  color: white;
-  padding: 12px 24px;
-  font-size: 16px;
-  text-decoration: none;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: background-color 0.3s;
-}
-
-.watch-button:hover {
-  background-color: #e63838;
-}
-
-
-footer {
-  background-color: #f3f3f3;
-  text-align: center;
-  padding: 1em;
-  font-size: 0.9em;
-  margin-top: 3em;
-}
+  max-width: 960p
