@@ -72,7 +72,7 @@ iframe {
 }
 
 .intro-text h2 {
-  color: #ff4e00;
+  color: #EA0000;
 }
 
 /* 按鈕 */
@@ -113,7 +113,7 @@ footer {
   left: 0;
   width: 10px;
   height: 10px;
-  background-color: #ff4e00;
+  background-color: #FFFFAA;
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
