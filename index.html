@@ -7,16 +7,6 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
 </head>
-<div class="cursor-dot"></div>
-
-<script>
-  const dot = document.querySelector(".cursor-dot");
-
-  window.addEventListener("mousemove", (e) => {
-    dot.style.top = e.clientY + "px";
-    dot.style.left = e.clientX + "px";
-  });
-</script>
   <body>
   <header>
     <h1>Virtual Reality anime series．David&Jay</h1>
@@ -50,5 +40,62 @@
   <footer>
     <p>© 2025 An Li Chen · Virtual Reality anime series．David&Jay</p>
   </footer>
+    <!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David&Jay</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Virtual Reality anime series．David&Jay</h1>
+    <p>2025 暑假即將上映！！</p>
+  </header>
+
+  <main>
+    <section class="intro-section">
+      <div class="intro-container">
+        <img src="David.jpg" alt="David&Jay 動畫劇照" class="intro-image">
+        <div class="intro-text">
+          <h2>About David&Jay</h2>
+          <p><strong>Directors：</strong> An Li Chen, Chang Shao hsuan, Hong Ci Zhen, Lin Yu Huei</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-gallery">
+      <iframe width="360" height="215"
+        src="https://www.youtube.com/embed/KsgMk4glU-4"
+        title="David's Trailer" frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+      <iframe width="360" height="215"
+        src="https://www.youtube.com/embed/PLFPOT9cT9M"
+        title="Jay's Trailer" frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 An Li Chen · Virtual Reality anime series．David&Jay</p>
+  </footer>
+
+  <!-- 滑鼠圓點 -->
+  <div class="cursor-dot"></div>
+
+  <script>
+    const dot = document.querySelector(".cursor-dot");
+
+    window.addEventListener("mousemove", (e) => {
+      dot.style.top = e.clientY + "px";
+      dot.style.left = e.clientX + "px";
+    });
+  </script>
+</body>
+</html>
+
 </body>
 </html>
