@@ -38,15 +38,27 @@ main {
   padding: 0;
 }
 
-.links a {
-  color: #2f4fcf;
-  text-decoration: none;
-  font-weight: bold;
+.watch-link {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.links a:hover {
-  text-decoration: underline;
+.watch-button {
+  display: inline-block;
+  background-color: #ff4f4f;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
 }
+
+.watch-button:hover {
+  background-color: #e63838;
+}
+
 
 footer {
   background-color: #f3f3f3;
