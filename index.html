@@ -3,33 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>David&Jay</title>
+  <title>David & Jay</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.3.0/tsparticles.bundle.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+      font-family: 'Noto Sans TC', sans-serif;
+      line-height: 1.6;
+    }
+
+    #tsparticles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+
+    .cursor-dot {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      background-color: white;
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .intro-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .intro-image {
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .intro-text {
+      max-width: 500px;
+    }
+
+    .video-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    iframe {
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-  <!-- 粒子背景 -->
   <div id="tsparticles"></div>
+  <div class="cursor-dot"></div>
 
-  <!-- 頁首 -->
   <header>
     <h1>Virtual Reality anime series．David & Jay</h1>
     <p>2025 暑假即將上映！！</p>
   </header>
 
-  <!-- 主內容 -->
   <main>
     <section class="intro-section">
       <div class="intro-container">
         <img src="images/David.jpg" alt="David&Jay 動畫劇照" class="intro-image">
         <div class="intro-text">
-  <h2>About David & Jay</h2>
-  <p><strong>Directors： <p>
-   <p></strong> An Li Chen, Chang Shao hsuan, Hong Ci Zhen, Lin Yu Huei</p>
-  <p></thin>David & Jay 是兩部結合虛擬實境技術與動畫敘事的實驗影集。故事以兩位角色的交錯視角展開，帶領觀眾穿梭於兩位主角的故事之間，挑戰感官邊界。</p>
-</div>
-
+          <h2>About David & Jay</h2>
+          <p><strong>Directors：</strong> An Li Chen, Chang Shao hsuan, Hong Ci Zhen, Lin Yu Huei</p>
+          <p><i>David & Jay</i> 是兩部結合虛擬實境技術與動畫敘事的實驗影集。故事以兩位角色的交錯視角展開，帶領觀眾穿梭於兩位主角的故事之間，挑戰感官邊界。</p>
+        </div>
       </div>
     </section>
 
@@ -46,15 +121,10 @@
     </section>
   </main>
 
-  <!-- 頁腳 -->
   <footer>
     <p>© 2025 An Li Chen · Virtual Reality anime series．David & Jay</p>
   </footer>
 
-  <!-- 滑鼠圓點 -->
-  <div class="cursor-dot"></div>
-
-  <!-- JS -->
   <script>
     // 滑鼠圓點
     const dot = document.querySelector(".cursor-dot");
@@ -63,34 +133,33 @@
       dot.style.left = e.clientX + "px";
     });
 
-    // 粒子背景設定
-<script>
-  tsParticles.load("tsparticles", {
-    fullScreen: { enable: false }, // 因為我們自己設 z-index 和尺寸
-    background: { color: "#000" },
-    particles: {
-      number: { value: 60 },
-      color: { value: "#ffffff" },
-      shape: { type: "circle" },
-      opacity: { value: 0.3 },
-      size: { value: { min: 1, max: 3 } },
-      move: {
-        enable: true,
-        speed: 1,
-        direction: "none",
-        random: true,
-        straight: false,
-        outModes: { default: "out" }
-      },
-      links: {
-        enable: true,
-        distance: 120,
-        color: "#ffffff",
-        opacity: 0.2,
-        width: 0.5
+    // 粒子背景
+    tsParticles.load("tsparticles", {
+      fullScreen: { enable: false },
+      background: { color: "#000" },
+      particles: {
+        number: { value: 60 },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.3 },
+        size: { value: { min: 1, max: 3 } },
+        move: {
+          enable: true,
+          speed: 1,
+          direction: "none",
+          random: true,
+          straight: false,
+          outModes: { default: "out" }
+        },
+        links: {
+          enable: true,
+          distance: 120,
+          color: "#ffffff",
+          opacity: 0.2,
+          width: 0.5
+        }
       }
-    }
-  });
-</script>
+    });
+  </script>
 </body>
 </html>
