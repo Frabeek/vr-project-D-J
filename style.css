@@ -25,6 +25,10 @@ header p {
   margin: 0;
 }
 
+.intro-text h2 {
+  color: #EA0000;
+}
+
 /* Main */
 main {
   padding: 2rem;
@@ -83,7 +87,8 @@ footer {
   left: 0;
   width: 10px;
   height: 10px;
-  background-color: #EA0000;
+  background-color: #ffffaa;
+  box-shadow: 0 0 8px #ffffaa;
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
