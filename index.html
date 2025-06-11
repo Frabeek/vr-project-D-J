@@ -7,7 +7,17 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
 </head>
-<body>
+<div class="cursor-dot"></div>
+
+<script>
+  const dot = document.querySelector(".cursor-dot");
+
+  window.addEventListener("mousemove", (e) => {
+    dot.style.top = e.clientY + "px";
+    dot.style.left = e.clientX + "px";
+  });
+</script>
+  <body>
   <header>
     <h1>Virtual Reality anime series．David&Jay</h1>
     <p>2025 暑假即將上映！！</p>
